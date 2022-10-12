@@ -1,0 +1,80 @@
+@import "../../styles/mixins.scss";
+.result {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #00474b;
+  width: 51%;
+  padding: 4rem;
+  border-radius: 1.5rem;
+
+  @include respond-phone {
+    width: 100%;
+    padding: 2.4rem;
+    gap: 3rem;
+  }
+
+  &-info {
+    display: flex;
+    flex-direction: column;
+    @include respond-phone {
+      gap: 2.5rem;
+    }
+  }
+
+  &-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &-headers {
+    & h2 {
+      color: #fff;
+      font-size: 1.6rem;
+      font-weight: 700;
+    }
+
+    & p {
+      color: #7f9d9f;
+      font-size: 1.3rem;
+      font-weight: 700;
+    }
+  }
+
+  &-amount {
+    & p {
+      color: #26c2ae;
+      font-size: 4.8rem;
+      font-weight: 700;
+
+      @include respond-phone {
+        font-size: 3.2rem;
+      }
+    }
+  }
+
+  &-reset {
+    background-color: #26c2ae;
+    border: none;
+    padding: 0.9rem 0;
+    color: #00474b;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-family: inherit;
+    font-weight: 700;
+    border-radius: 0.5rem;
+    display: inline-block;
+    transition: all 0.3s;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #9fe8df;
+    }
+
+    &:active {
+      transform: translateY(0.2rem);
+      box-shadow: 0 2rem 2.5rem rgba(#000, 0.2);
+    }
+  }
+}

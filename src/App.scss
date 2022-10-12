@@ -1,0 +1,24 @@
+@import "./styles/mixins.scss";
+
+.App {
+  // text-align: center;
+  background-color: #c5e4e7;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  // justify-content: center;
+  align-items: center;
+  gap: 8.7rem;
+
+  @include respond-phone {
+    gap: 4rem;
+  }
+}
+
+.logo {
+  margin-top: 16.3rem;
+
+  @include respond-phone {
+    margin-top: 5rem;
+  }
+}
