@@ -5,6 +5,7 @@ This is a solution to the [Tip calculator app challenge on Frontend Mentor](http
 ## Table of contents
 
 - [Overview](#overview)
+  - [Screenshot](#screenshot)
   - [The challenge](#the-challenge)
   - [Links](#links)
   - [Built with](#built-with)
@@ -13,7 +14,11 @@ This is a solution to the [Tip calculator app challenge on Frontend Mentor](http
 
 ## Overview
 
-A project that calculates the rent tip and the total bill per person.
+A project that calculates the tip and the total bill per person. I am using Calculator as Parent Component where is State which is passed to children components.
+
+### Screenshot
+
+![](./src/assets/screenTip.jpg)
 
 ### The challenge
 
