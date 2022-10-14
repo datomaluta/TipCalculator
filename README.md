@@ -25,8 +25,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/datomaluta/TipCalculator/tree/main/src)
-- Live Site URL: [Add live site URL here](https://tipcalculate-datomaluta.netlify.app/)
+- Solution URL: [https://github.com/datomaluta/TipCalculator/tree/main/src]
+- Live Site URL: [https://tipcalculate-datomaluta.netlify.app/]
 
 ## My process
 
@@ -45,4 +45,4 @@ More than learning, this challenge deepened the knowledge I already had in React
 
 ## Author
 
--[Davit Malutashvili]
+[Davit Malutashvili]
