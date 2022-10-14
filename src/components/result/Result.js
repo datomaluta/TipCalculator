@@ -28,7 +28,11 @@ const Result = (props) => {
         </div>
       </div>
 
-      <button onClick={resetHandler} className="result-reset">
+      <button
+        disabled={props.buttonDisabled}
+        onClick={resetHandler}
+        className="result-reset"
+      >
         Reset
       </button>
     </div>

@@ -76,5 +76,11 @@
       transform: translateY(0.2rem);
       box-shadow: 0 2rem 2.5rem rgba(#000, 0.2);
     }
+
+    &:disabled {
+      background-color: #0d686d;
+      color: #00474b;
+      cursor: not-allowed;
+    }
   }
 }

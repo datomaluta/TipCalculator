@@ -9,6 +9,7 @@ const Calculator = () => {
   const [customTip, setCustomTip] = useState("");
   const [peopleCount, setPeopleCount] = useState("");
   const [peopleCountError, setPeopleCountError] = useState(false);
+  const [resetButtonDisabled, setResetButtonDisabled]=useState(true)
 
   const [tipPerPerson, setTipPerPerson] = useState(0);
   const [totalPerPerson, setTotalPerPerson] = useState(0);
@@ -20,6 +21,7 @@ const Calculator = () => {
       console.log((tipAmount + +bill) / +peopleCount);
       setTipPerPerson(tipAmount / +peopleCount);
       setTotalPerPerson((tipAmount + +bill) / +peopleCount);
+      setResetButtonDisabled(false)
     }
   }, [bill, tip, peopleCount]);
 
@@ -83,6 +85,7 @@ const Calculator = () => {
         reset={reset}
         tipPerPerson={tipPerPerson}
         totalPerPerson={totalPerPerson}
+        buttonDisabled={resetButtonDisabled}
       />
     </ContainerWrapper>
   );
