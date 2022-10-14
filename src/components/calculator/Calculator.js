@@ -9,7 +9,7 @@ const Calculator = () => {
   const [customTip, setCustomTip] = useState("");
   const [peopleCount, setPeopleCount] = useState("");
   const [peopleCountError, setPeopleCountError] = useState(false);
-  const [resetButtonDisabled, setResetButtonDisabled]=useState(true)
+  const [resetButtonDisabled, setResetButtonDisabled] = useState(true);
 
   const [tipPerPerson, setTipPerPerson] = useState(0);
   const [totalPerPerson, setTotalPerPerson] = useState(0);
@@ -21,7 +21,7 @@ const Calculator = () => {
       console.log((tipAmount + +bill) / +peopleCount);
       setTipPerPerson(tipAmount / +peopleCount);
       setTotalPerPerson((tipAmount + +bill) / +peopleCount);
-      setResetButtonDisabled(false)
+      setResetButtonDisabled(false);
     }
   }, [bill, tip, peopleCount]);
 
@@ -32,6 +32,7 @@ const Calculator = () => {
     setCustomTip("");
     setTipPerPerson(0);
     setTotalPerPerson(0);
+    setResetButtonDisabled(true);
   };
 
   const billChangeHandler = (event) => {
