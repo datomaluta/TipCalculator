@@ -4,7 +4,6 @@ import person from "../../assets/icon-person.svg";
 import CheckBox from "../../UI/CheckBox";
 
 const Form = (props) => {
-  console.log(props);
   const {
     bill,
     tip,

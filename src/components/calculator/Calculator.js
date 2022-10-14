@@ -1,5 +1,4 @@
 import ContainerWrapper from "../../Layout/ContainerWrapper";
-import "./Calculator.scss";
 import Result from "../result/Result";
 import { useEffect, useState } from "react";
 import Form from "../form/Form";
@@ -39,8 +38,6 @@ const Calculator = () => {
     } else {
       setBill(event.target.value);
     }
-
-    // setBill(event.target.value);
   };
 
   const tipChangeHandler = (event) => {
